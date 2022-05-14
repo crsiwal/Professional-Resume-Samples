@@ -55,6 +55,7 @@
         width: 100%;
         padding-left: 35px;
         padding-top: 25px;
+        -webkit-print-color-adjust: exact;
       }
       .head-right-name {
         color: #fff;
@@ -212,6 +213,25 @@
         margin-top: 5px;
         color: black;
       }
+
+      /* Percentage Slider Css */
+      .progress {
+        width: 100%;
+        max-width: 200px;
+        height: 6px;
+        background: #e1e4e8;
+        border-radius: 1px;
+        margin-top: 8px;
+        overflow: hidden;
+      }
+
+      .progress-bar {
+        display: block;
+        height: 100%;
+        background: #303745;
+        -webkit-print-color-adjust: exact;
+      }
+
       /* Print Page CSS */
       @page {
         size: A4;
@@ -219,12 +239,6 @@
       }
       @page :first {
         margin-top: 0;
-      }
-      @media print {
-        .head-right {
-          background-color: #303745 !important;
-          -webkit-print-color-adjust: exact;
-        }
       }
     </style>
   </head>
@@ -475,6 +489,7 @@
           </section>
         </div>
         <div class="content-right">
+          <!-- Section Personal Details -->
           <section class="titles border">
             <div class="heading">Personal details</div>
             <div class="info mt-5">
@@ -516,6 +531,89 @@
                   linkedin.com/in/rsiwal
                 </a>
               </div>
+            </div>
+          </section>
+          <!-- Section Technical Skills -->
+          <section class="titles border">
+            <div class="heading">Skills</div>
+            <div class="info mt-5">
+              <div class="detail">PHP</div>
+              <div class="progress">
+                <span class="progress-bar" style="width: 100%"></span>
+              </div>
+            </div>
+            <div class="info mt-5">
+              <div class="detail">JavaScript</div>
+              <div class="progress">
+                <span class="progress-bar" style="width: 100%"></span>
+              </div>
+            </div>
+            <div class="info mt-5">
+              <div class="detail">React JS</div>
+              <div class="progress">
+                <span class="progress-bar" style="width: 75%"></span>
+              </div>
+            </div>
+            <div class="info mt-5">
+              <div class="detail">Node JS</div>
+              <div class="progress">
+                <span class="progress-bar" style="width: 35%"></span>
+              </div>
+            </div>
+            <div class="info mt-5">
+              <div class="detail">HTML & CSS</div>
+              <div class="progress">
+                <span class="progress-bar" style="width: 100%"></span>
+              </div>
+            </div>
+            <div class="info mt-5">
+              <div class="detail">RDMS</div>
+              <div class="progress">
+                <span class="progress-bar" style="width: 75%"></span>
+              </div>
+            </div>
+            <div class="info mt-5">
+              <div class="detail">Google Cloud</div>
+              <div class="progress">
+                <span class="progress-bar" style="width: 25%"></span>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section Languages -->
+          <section class="titles border">
+            <div class="heading">Languages</div>
+            <div class="info mt-5">
+              <div class="detail">English</div>
+              <div class="progress">
+                <span class="progress-bar" style="width: 75%"></span>
+              </div>
+            </div>
+            <div class="info mt-5">
+              <div class="detail">Hindi</div>
+              <div class="progress">
+                <span class="progress-bar" style="width: 100%"></span>
+              </div>
+            </div>
+            <div class="info mt-5">
+              <div class="detail">Punjabi</div>
+              <div class="progress">
+                <span class="progress-bar" style="width: 35%"></span>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section Hobbies -->
+          <section class="titles border">
+            <div class="heading">Hobbies</div>
+            <div class="info mt-5">
+              <div class="detail">English</div>
+            </div>
+            <div class="info mt-5">
+              <div class="detail">Hindi</div>
+            </div>
+            <div class="info mt-5">
+              <div class="detail">Punjabi</div>
             </div>
           </section>
         </div>
